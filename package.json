@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://bmbno.github.io/portfolio",
+  "homepage": "https://bmbno.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "nodemon src/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "pre-deploy": "yarn run build",
@@ -39,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "nodemon": "^2.0.18"
   }
 }
