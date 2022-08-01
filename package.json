@@ -9,12 +9,13 @@
     "@testing-library/user-event": "^13.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "pre-deploy": "yarn run build",
