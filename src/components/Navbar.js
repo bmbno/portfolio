@@ -51,16 +51,16 @@ const NavBar = () => {
         </div>
       </div>
       <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
-        <li className="border-b-2 border-zinc-300 w-full">
-          <Link to="/">Home</Link>
+        <li className="border-b-2 border-zinc-300 w-full" onClick={handleClick}>
+          <Link to="/portfolio">Home</Link>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full">
+        <li className="border-b-2 border-zinc-300 w-full" onClick={handleClick}>
           <Link to="/projects">Projects</Link>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full">
+        <li className="border-b-2 border-zinc-300 w-full" onClick={handleClick}>
           <Link to="/about">About</Link>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full">
+        <li className="border-b-2 border-zinc-300 w-full" onClick={handleClick}>
           <Link to="/contact">Contact</Link>
         </li>
         <div className="flex flex-col my-4">
