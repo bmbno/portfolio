@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -15,7 +16,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "nodemon index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "pre-deploy": "yarn run build",
@@ -41,7 +41,9 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.8",
     "gh-pages": "^4.0.0",
-    "nodemon": "^2.0.18"
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7"
   }
 }

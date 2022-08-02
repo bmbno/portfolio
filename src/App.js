@@ -5,10 +5,12 @@ import About from "./routes/About";
 import Home from "./routes/Home";
 import Contact from "./routes/Contact";
 import Projects from "./routes/Projects";
+import NavBar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
+      <NavBar />
       <Routes>
         <Route exact path="/portfolio" element={<Home />} />
         <Route path="/about" element={<About />} />
