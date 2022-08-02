@@ -9,13 +9,13 @@ import NavBar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div>
+    <div className="h-screen bg-slate-800">
       <NavBar />
       <Routes>
         <Route exact path="/portfolio" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/portfolio/about" element={<About />} />
+        <Route path="/portfolio/contact" element={<Contact />} />
+        <Route path="/portfolio/projects" element={<Projects />} />
         <Route path="*" element={<Navigate replace to="/portfolio" />} />
         {/* <Route path="/projects/:id" elements={<projectid/>} /> */}
       </Routes>
