@@ -7,22 +7,32 @@ const NavBar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="w-screen h-[80px] z-10 bg-zinc-200 sticky drop-shadow-lg">
+    <div className="w-screen h-[80px] z-10 bg-neutral-900 sticky drop-shadow">
       <div className="px-2 flex justify-between items-center w-full h-full">
-        <div className="flex items-center">
-          <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Gabe Ng</h1>
+        <div className="flex items-center text-neutral-100">
+          <h1 className="text-3xl font-bold mr-4 sm:text-4xl ">
+            <Link to="/portfolio">Gabe Ng</Link>
+          </h1>
           <ul className="hidden md:flex">
             <li>
-              <Link to="/portfolio">Home</Link>
+              <button>
+                <Link to="/portfolio">Home</Link>
+              </button>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <button>
+                <Link to="/portfolio/projects">Projects</Link>
+              </button>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <button>
+                <Link to="/portfolio/about">About</Link>
+              </button>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <button>
+                <Link to="/portfolio/work">Work</Link>
+              </button>
             </li>
           </ul>
         </div>
@@ -42,26 +52,44 @@ const NavBar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              GitHub
             </a>
           </button>
         </div>
         <div className="md:hidden" onClick={handleClick}>
-          {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
+          {!nav ? (
+            <MenuIcon className="w-5 text-neutral-100" />
+          ) : (
+            <XIcon className="w-5 text-neutral-100" />
+          )}
         </div>
       </div>
-      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
-        <li className="border-b-2 border-zinc-300 w-full" onClick={handleClick}>
-          <Link to="/portfolio">Home</Link>
+      <ul
+        className={
+          !nav
+            ? "hidden"
+            : "absolute bg-neutral-800 w-full px-8 text-neutral-100 text-center md:hidden flex flex-col"
+        }
+      >
+        <li className="w-full" onClick={handleClick}>
+          <button className="px-8 py-3 w-full">
+            <Link to="/portfolio">Home</Link>
+          </button>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full" onClick={handleClick}>
-          <Link to="/projects">Projects</Link>
+        <li className="w-full" onClick={handleClick}>
+          <button className="px-8 py-3 w-full">
+            <Link to="/portfolio/projects">Projects</Link>
+          </button>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full" onClick={handleClick}>
-          <Link to="/about">About</Link>
+        <li className="w-full" onClick={handleClick}>
+          <button className="px-8 py-3 w-full">
+            <Link to="/portfolio/about">About</Link>
+          </button>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full" onClick={handleClick}>
-          <Link to="/contact">Contact</Link>
+        <li className="w-full" onClick={handleClick}>
+          <button className="px-8 py-3 w-full">
+            <Link to="/portfolio/work">Work</Link>
+          </button>
         </li>
         <div className="flex flex-col my-4">
           <button className="px-8 py-3 mb-4">
@@ -79,7 +107,7 @@ const NavBar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              GitHub
             </a>
           </button>
         </div>

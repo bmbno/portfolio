@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        @apply bg-neutral-900
+    }
+    
     li {
         @apply p-4
     }
 
     button {
-        @apply text-white border bg-green-500 border-green-500
-        hover:bg-transparent hover:text-green-500 rounded-md
+        @apply text-neutral-100 border bg-neutral-900 border-neutral-900
+        hover:bg-transparent hover:text-neutral-400 rounded-md
     }
 }
