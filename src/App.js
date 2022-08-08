@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 //import "./App.css";
-import About from "./routes/About";
 import Home from "./routes/Home";
 import Work from "./routes/Work";
 import Projects from "./routes/Projects";
@@ -13,7 +12,6 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route exact path="/portfolio" element={<Home />} />
-        <Route path="/portfolio/about" element={<About />} />
         <Route path="/portfolio/work" element={<Work />} />
         <Route path="/portfolio/projects" element={<Projects />} />
         <Route

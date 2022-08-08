@@ -26,11 +26,6 @@ const NavBar = () => {
             </li>
             <li>
               <button>
-                <Link to="/portfolio/about">About</Link>
-              </button>
-            </li>
-            <li>
-              <button>
                 <Link to="/portfolio/work">Work</Link>
               </button>
             </li>
@@ -79,11 +74,6 @@ const NavBar = () => {
         <li className="w-full" onClick={handleClick}>
           <button className="px-8 py-3 w-full">
             <Link to="/portfolio/projects">Projects</Link>
-          </button>
-        </li>
-        <li className="w-full" onClick={handleClick}>
-          <button className="px-8 py-3 w-full">
-            <Link to="/portfolio/about">About</Link>
           </button>
         </li>
         <li className="w-full" onClick={handleClick}>
