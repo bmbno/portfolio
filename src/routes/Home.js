@@ -14,8 +14,8 @@ const Home = () => {
             and have fell in love with it since, inspiring me to take classes
             such as <b>Data Structures</b> during my remaining time at Davidson.
             <br />
-            <br />I am currenting pursuing a post-baccalaureate at North
-            Carolina State University in the form of their{" "}
+            <br />I am currently pursuing a post-baccalaureate at North Carolina
+            State University in the form of their{" "}
             <a
               href="https://www.engineeringonline.ncsu.edu/programs-and-courses/certificates/computer-programming-certificate/"
               target="_blank"
